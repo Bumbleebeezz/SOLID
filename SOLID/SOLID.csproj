@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="HandsOn#W12\Switches\" />
+    <Folder Include="HandsOn#W12\Units\" />
+  </ItemGroup>
+
 </Project>
