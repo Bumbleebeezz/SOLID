@@ -4,7 +4,7 @@ namespace SOLID.HandsOn_W12.Switches;
 
 public interface ISwitch
 {
-	void SetElectricalUnit(IElectricalUnit unit);
-	void On();
-	void Off();
+	ISwitch SetElectricalUnit(IElectricalUnit unit);
+	ISwitch On();
+	ISwitch Off();
 }

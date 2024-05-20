@@ -6,18 +6,23 @@ public abstract class Switch : ISwitch
 {
 	public abstract string Name { get;}
 	public IElectricalUnit ElectricalUnit { get; private set; }
-	public void SetElectricalUnit(IElectricalUnit unit)
+	public ISwitch SetElectricalUnit(IElectricalUnit unit)
 	{
 		ElectricalUnit = unit;
+		return this;
 	}
 
-	public void On()
+	public ISwitch On()
 	{
+		Console.WriteLine($"{this.Name} toogles on");
 		ElectricalUnit.On();
+		return this;
 	}
 
-	public void Off()
+	public ISwitch Off()
 	{
+		Console.WriteLine($"{this.Name} toogles off");
 		ElectricalUnit.Off();
+		return this;
 	}
 }
